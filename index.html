@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOT | By Jacob Drath</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: gray;">
+    <center>
+        <h1 style="font-family: 'Ubuntu', sans-serif;"><span style="color: red;">D</span><span style="color: yellow;">O</span><span style="color: green;">T</span> by Jacob Drath</h1>
+        <canvas width="350" height="350" id="canvas" style="background-color: whITE;"></canvas><br>
+        <p style="font-family: 'Ubuntu', sans-serif;">Total dots: <span id="dots"></span></p>
+        <button onclick="location.reload()">Clear</button>
+        <div style="font-family: 'Ubuntu', sans-serif;">
+            <h2>What is this?</h2>
+            <p>Right now, your device is running a script that places a dot at a random location on the box above every 5 milliseconds (ms). 5 ms is equal to 0.005 seconds. Your computer takes time to: get two random numbers for X Y position of dot, place the dot on the image, Add one (1) to the number of dots and, update the text with the number of dots on the page. It does this all in a spilt microsecond (μs). There are 5000 μs in 1 ms, and there are 1000 ms in a second. That is fast, very fast. It is not uncommon to hear people complain about how slow there computer is. But, computers have came a long way. When you loaded this website, thousands, millions, maybe even billions of <i>bits</i> <a href="javascript:alert('A bit is a single digit of data, offten binary. Example: In 1010101, one singal 1 or 0 is a bit.')">(?)</a> were sent from my server to your device in about a second. Your device then "builds" this page. Which it then shows what you are seeing now. All of this, in less than a second.</p>
+            <p>Humans often see "random" as "middle" or "not predicable." But this is not true randomness, this is unpredictable. If I were to think of a random number between 1 and 100. Chances are, I would only say 1 intentionally instead of just thinking of it. But if I was being fully random, 1 would have the same chances as every other number. When your device places a dot randomly, it picks 2 numbers between 1-350. It then uses this as an X, Y position for the dot. The chances of it getting 1, 1 are 1/700. This has happened <span id="one">no</span> time(s). Chances are, this has not happened yet, it eventually will.</p>
+            <p>I hope you enjoyed this. <br>Written and coded by Jacob Drath.</p>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+<style>
+    a {
+        color: rgb(73, 73, 73);
+        cursor: help;
+    }
+</style>
+</html>
